@@ -1,0 +1,10 @@
+<div class="icon-display">
+  <button class="btn-random" (click)="getRandomIcon()">Random Icon
+    <span *ngIf="isWorking">
+      <app-loading-spinner></app-loading-spinner>
+    </span>
+  </button>
+  <div class="icon">
+    <fa-icon [icon]="randomIcon" size="2xl" *ngIf="randomIcon" style="color: #1e3050"></fa-icon>
+  </div>
+</div>
